@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Protected Page</title>
+</head>
+<body>
+  <script>
+    // Secure password storage (avoid using prompt for sensitive data)
+    const correctPassword = "I love you Prince"; // Replace with a strong password
+
+    function checkPassword() {
+      const enteredPassword = prompt("Enter Password To View Page:");
+      if (enteredPassword === correctPassword) {
+        window.location.href = "https://happy-birthday-caterpillar24.netlify.app/"; // Use window.location.href for redirection
+        
+      } else {
+        alert("wrong password, refresh & re-enter correct password");
+      }
+    }
+
+    checkPassword(); // Call the function to prompt for password on page load
+  </script>
+</body>
+</html>
